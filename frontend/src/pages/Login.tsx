@@ -102,7 +102,7 @@
                onClick={() => navigate("/signup")}
                className="text-lg text-slate-600 hover:text-slate-800"
              >
-               Hesabınız yok mu? Kayıt olun--------*
+               Hesabınız yok mu? Kayıt olun
              </Button>
            </div>
          </form>
