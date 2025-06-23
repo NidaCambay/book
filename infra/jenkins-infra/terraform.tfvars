@@ -1,4 +1,4 @@
-tf_state_bucket = "tf-state-hakan"
+tf_state_bucket = "tf-state-nida"
 tf_state_key    = "jenkins/terraform.tfstate"
 lock_table      = "terraform-locks"
 region          = "us-east-1"

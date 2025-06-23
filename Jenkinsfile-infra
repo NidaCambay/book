@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout') {
       steps {
-        git branch: 'main', credentialsId: 'github-auth', url: 'https://github.com/hakanbayraktar/book.git'
+        git branch: 'main', credentialsId: 'github-auth', url: 'https://github.com/NidaCambay/book.git'
       }
     }
 
@@ -127,7 +127,7 @@ CSRF_TRUSTED_ORIGINS=http://${frontendAlb}
 
             git add backend/.env.backend frontend/.env.frontend || true
             git commit -m "🔄 Update .env files from Terraform output [build $BUILD_NUMBER]" || echo "No changes."
-            git push https://$GIT_USER:$GIT_PAT@github.com/hakanbayraktar/book.git HEAD:main
+            git push https://$GIT_USER:$GIT_PAT@github.com/NidaCambay/book.git HEAD:main
           '''
         }
       }

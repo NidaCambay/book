@@ -11,7 +11,7 @@ pipeline {
 
     stage('Checkout') {
       steps {
-        git branch: 'main', credentialsId: 'github-auth', url: 'https://github.com/hakanbayraktar/book.git'
+        git branch: 'main', credentialsId: 'github-auth', url: 'https://github.com/NidaCambay/book.git'
       }
     }
 
@@ -43,7 +43,7 @@ pipeline {
               export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
 
               terraform init \
-                -backend-config="bucket=tf-state-hakan" \
+                -backend-config="bucket=tf-state-nida" \
                 -backend-config="region=us-east-1" \
                 -backend-config="key=aws-resources/terraform.tfstate" \
                 -backend-config="dynamodb_table=terraform-locks"
