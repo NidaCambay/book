@@ -73,7 +73,7 @@ pipeline {
           ]) {
             sh '''
               terraform init \
-                -backend-config="bucket=tf-state-hakan" \
+                -backend-config="bucket=tf-state-nida" \
                 -backend-config="region=us-east-1" \
                 -backend-config="key=aws-resources/terraform.tfstate" \
                 -backend-config="dynamodb_table=terraform-locks"
